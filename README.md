@@ -2,7 +2,7 @@
 
 This project provides a comparative performance analysis of three Deep Learning architectures—Convolutional Neural Networks (CNN), Generative Adversarial Networks (GAN), and a Proposed Deep Convolutional GAN (DCGAN)—for detecting network intrusions using the Edge-IIoT dataset.
 
-## 🚀 Project Overview
+## Project Overview
 
 Intrusion Detection Systems (IDS) are critical for securing Industrial IoT (IIoT) environments. This repository implements and evaluates different deep learning models to classify network traffic as either benign or a specific type of attack.
 
@@ -13,9 +13,9 @@ Intrusion Detection Systems (IDS) are critical for securing Industrial IoT (IIoT
 * Model Implementation: PyTorch-based implementations of CNN, GAN, and DCGAN architectures.
 * Comprehensive Evaluation: Comparison using Accuracy, Recall, F1-Score, and ROC-AUC metrics.
 
-## 📊 Dataset
+##  Dataset
 
-The project utilizes the **DNN-EdgeIIoT dataset.
+The project utilizes the DNN-EdgeIIoT dataset.
 
 * Input Features: 53 network-related features (e.g., `frame.time`, `ip.src_host`, `tcp.flags`, `mqtt.msgtype`).
 * Target: `Attack_type` (Categorical classification of various IIoT attacks).
@@ -47,7 +47,7 @@ jupyter notebook "Comparative Analysis of CNN, GAN, and PROPOSED DCGAN.ipynb"
 
 
 
-## 📈 Model Performance
+## Model Performance
 
 Based on the experimental results in the notebook, the models were evaluated on several key metrics:
 
@@ -59,13 +59,13 @@ Based on the experimental results in the notebook, the models were evaluated on 
 
 (Note: Exact results for GAN/DCGAN can be viewed in the output cells of the notebook after training.)
 
-## 🔬 Methodology
+##  Methodology
 
 1. Data Loading: Features are extracted and non-numeric values are encoded.
 2. Balancing: The dataset is grouped by `Attack_type` and sampled to match the smallest class size to prevent model bias.
 3. Training: Models are trained using PyTorch with a focus on binary and multi-class classification.
 4. Visualization: ROC curves are generated to compare the True Positive Rate vs. False Positive Rate across all three models.
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License 
